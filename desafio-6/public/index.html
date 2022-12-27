@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<head>
+  <title>Websocket awesome chat!</title>
+</head>
+<body>
+  <h1>El chat de los tricampeones</h1>
+  <form onsubmit="return sendMessage(this)">
+    <input type="text" required id="author" name="author" placeholder="name">
+    <input type="text" required id="text" name="text" placeholder="your congratulations message">
+    <button type="submit">Submit</button>
+  </form>
+  <div id="chatContent"></div>
+  <script src="https://cdn.socket.io/4.5.4/socket.io.min.js" integrity="sha384-/KNQL8Nu5gCHLqwqfQjA689Hhoqgi2S84SNUxC3roTe4EhJ9AfLkp8QiQcU8AMzI" crossorigin="anonymous"></script>
+  <script src="./main.js"></script>
+</body>
